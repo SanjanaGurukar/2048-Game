@@ -1,38 +1,73 @@
-.App {
+body {
+  background-image: linear-gradient(gold, cornsilk);
+}
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  padding: 20px;
+  background-color: gold;
+  font-size: 50px;
+}
+
+p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table {
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttons {
+margin: 0 auto;
+display: flex;
+width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button {
+background-color: #303030;
+color: yellow;
+height: 30px;
+width: 100px;
+border-radius: 5px;
+margin: 0 auto;
+margin-bottom: 25px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+}
+
+.button:hover {
+background-color: SlateGrey;
+color: #303030;
+transition: background-color 0.5s, color 0.5s;
+}
+.cell {
+  height: 100px;
+  width: 100px;
+  background-color: orange;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  border-radius: 5px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.number {
+  color: rgb(14, 13, 13);
+  font-size: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+h1.msg{
+  text-align: center;
+
 }
