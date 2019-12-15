@@ -159,6 +159,7 @@ class App extends React.Component {
     }
     return { board, score };
   }
+
   strikeRight(inputBoard) {
     let board = [];
     let score = 0;
@@ -261,6 +262,7 @@ class App extends React.Component {
     }
     return result;
   }
+
   rotateToRight(inputBoard) {
     let result = [];
     for (let c = 0; c < inputBoard.length; c++) {
@@ -344,11 +346,10 @@ const Row = ({ row }) => {
 };
 
 const Cell = ({ cellValue }) => {
-  let color = 'cell';
   let value = (cellValue === 0) ? '' : cellValue;
   return (
     <td>
-      <div className={color}>
+      <div className='cell'>
         <div className="number">{value}</div>
       </div>
     </td>
