@@ -1,5 +1,6 @@
 body {
   background-image: linear-gradient(gold, cornsilk);
+  background-repeat: repeat-x;
 }
 
 div.sticky {
@@ -22,7 +23,9 @@ table {
 .buttons {
 margin: 0 auto;
 display: flex;
-width: 500px;
+width: 100%;
+   min-width: 50px;
+   max-width: 300px;
 }
 
 .button {
@@ -69,4 +72,9 @@ transition: background-color 0.5s, color 0.5s;
 h1.msg{
   text-align: center;
 
+}
+
+@media screen and (max-width: 768px) {
+  #table { width:100%; }
+  #score { width:100%; margin:0; border:none; }
 }

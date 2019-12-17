@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './css/App.css';
 
 class App extends React.Component {
   constructor(props) {
@@ -320,14 +320,16 @@ class App extends React.Component {
 
         <div className="buttons">
           <div className="button" onClick={() => { this.strike('left') }}>Left</div>
+          &nbsp;
           <div className="button" onClick={() => { this.strike('right') }}>Right</div>
+          &nbsp;
           <div className="button" onClick={() => { this.strike('up') }}>Up</div>
+          &nbsp;
           <div className="button" onClick={() => { this.strike('down') }}>Down</div>
 
         </div>
 
         <div className="score">Score: {this.state.score}</div>
-
         <table>
           {this.state.board.map((row, i) => (<Row key={i} row={row} />))}
         </table>
