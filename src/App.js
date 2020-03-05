@@ -314,7 +314,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="sticky">2048 Game! PS: you can't win :p</div>
+        <div className="sticky">2048 Game! PS: You can't win :p</div>
         <p><b>Use the keyboard arrow keys or the buttons to play.</b></p>
         <div className="button" onClick={() => { this.createBoard() }}>New Game</div>
 
